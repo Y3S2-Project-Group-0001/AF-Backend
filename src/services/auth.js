@@ -56,7 +56,7 @@ export const verifyMailTemplate = async (email, verification_code) => {
       cid: 'verificationCode',
     },
   ]
-  const subject = 'Welcome to Edupox'
+  const subject = 'Welcome to EduCircle'
   await sendMail(email, 'verificationCode', replacements, subject, attachments)
   return true
 }
