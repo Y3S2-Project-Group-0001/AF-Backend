@@ -189,9 +189,7 @@ export function deletePost(req, res) {
   postService
     .deletePost(postId)
     .then(() => {
-      console.log('deleted 1')
       res.json('Deleted!')
-      console.log('deleted 2')
     })
     .catch((err) => {
       console.log(err)
